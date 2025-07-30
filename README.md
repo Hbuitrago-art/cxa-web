@@ -1,1 +1,1 @@
-# cxa-web
+assets/banner.jpg
