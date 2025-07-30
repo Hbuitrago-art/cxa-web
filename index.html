@@ -2,71 +2,77 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CXA | China Express Autoparts</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      color: #333;
-      background-color: #f9f9f9;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Arial', sans-serif; color: #333; background: #fff; }
     header {
       background-color: #c42021;
-      color: #fff;
+      color: white;
       text-align: center;
-      padding: 2rem 1rem;
+      padding: 40px 20px;
     }
     header h1 {
-      margin: 0;
-      font-size: 2rem;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
     }
     header p {
-      margin: 0.5rem 0 0;
       font-size: 1.2rem;
+      font-style: italic;
     }
     nav {
-      background-color: #333;
-      padding: 0.5rem;
-      text-align: center;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
     }
     nav a {
-      color: #fff;
+      margin: 0 15px;
       text-decoration: none;
-      margin: 0 1rem;
+      color: #c42021;
       font-weight: bold;
     }
     .section {
-      padding: 2rem 1rem;
-      max-width: 1200px;
-      margin: 0 auto;
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+      text-align: center;
     }
     .section h2 {
-      text-align: center;
-      margin-bottom: 1rem;
       color: #c42021;
+      font-size: 2rem;
+      margin-bottom: 20px;
     }
-    .grid {
+    .section p, .section ul {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    ul {
+      text-align: left;
+      list-style-type: disc;
+      padding-left: 20px;
+      margin-top: 20px;
+    }
+    .marcas {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 2rem;
+      gap: 30px;
+      margin-top: 30px;
     }
-    .grid img {
-      max-width: 100px;
+    .marcas img {
+      width: 120px;
       height: auto;
     }
-    .brands {
-      text-align: center;
-      font-size: 1rem;
-      margin-bottom: 2rem;
-    }
-    .footer {
-      background-color: #333;
+    footer {
+      background-color: #222;
       color: #fff;
+      padding: 30px 20px;
       text-align: center;
-      padding: 2rem 1rem;
     }
     .whatsapp-btn {
       position: fixed;
@@ -74,24 +80,24 @@
       right: 20px;
       background-color: #25d366;
       color: white;
-      padding: 0.8rem 1.2rem;
+      padding: 12px 20px;
       border-radius: 50px;
-      font-weight: bold;
       text-decoration: none;
+      font-weight: bold;
       box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      z-index: 1000;
     }
     @media (max-width: 768px) {
-      .grid {
-        flex-direction: column;
-        align-items: center;
-      }
+      header h1 { font-size: 2rem; }
+      .section h2 { font-size: 1.5rem; }
+      .marcas img { width: 90px; }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>CXA | China Express Autoparts</h1>
+    <h1>China Express Autoparts</h1>
     <p>Confianza, Xperiencia, Agilidad</p>
   </header>
 
@@ -104,13 +110,13 @@
 
   <section id="nosotros" class="section">
     <h2>¿Quiénes somos?</h2>
-    <p>Somos CXA, una empresa especializada en la comercialización de autopartes para vehículos chinos en Colombia. Brindamos soluciones rápidas y confiables tanto para repuestos originales como genéricos. Nuestro compromiso es ofrecer productos de calidad, servicio ágil y un acompañamiento permanente a nuestros clientes.</p>
+    <p>En CXA nos especializamos en la distribución de autopartes para vehículos chinos. Ofrecemos soluciones integrales a talleres, almacenes, promotores y usuarios finales con productos originales y genéricos certificados.</p>
   </section>
 
   <section id="marcas" class="section">
     <h2>Marcas que manejamos</h2>
-    <p class="brands">Trabajamos con las principales marcas de vehículos chinos presentes en Colombia. Contamos con repuestos originales y genéricos para cada una.</p>
-    <div class="grid">
+    <p>Trabajamos con las principales marcas de vehículos chinos disponibles en Colombia:</p>
+    <div class="marcas">
       <img src="https://cxaimages.vercel.app/logos/changan.png" alt="Changan">
       <img src="https://cxaimages.vercel.app/logos/byd.png" alt="BYD">
       <img src="https://cxaimages.vercel.app/logos/jac.png" alt="JAC">
@@ -121,24 +127,24 @@
   </section>
 
   <section id="servicios" class="section">
-    <h2>¿Qué ofrecemos?</h2>
+    <h2>Nuestros Servicios</h2>
     <ul>
-      <li>Venta de repuestos nuevos originales y genéricos</li>
-      <li>Envíos a todo el país</li>
-      <li>Asesoría personalizada según tu necesidad</li>
-      <li>Atención a distribuidores, talleres y cliente final</li>
+      <li>Venta y distribución de autopartes nuevas</li>
+      <li>Envíos nacionales con cobertura total</li>
+      <li>Atención personalizada para cada perfil de cliente</li>
+      <li>Asesoría técnica especializada</li>
     </ul>
   </section>
 
   <section id="contacto" class="section">
     <h2>Contáctanos</h2>
-    <p>¿Tienes dudas o necesitas una cotización? ¡Estamos para ayudarte! Da clic en el botón de WhatsApp o escríbenos a nuestro correo.</p>
+    <p>¿Tienes dudas o buscas una cotización? Escríbenos directamente vía WhatsApp o correo.</p>
     <p>Email: contacto@cxautoparts.com</p>
   </section>
 
   <a class="whatsapp-btn" href="https://wa.me/573502657969" target="_blank">📲 Escríbenos</a>
 
-  <footer class="footer">
+  <footer>
     <p>&copy; 2025 CXA - China Express Autoparts. Todos los derechos reservados.</p>
   </footer>
 
