@@ -3,233 +3,145 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CXA - Autopartes China Express</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <title>CXA | China Express Autoparts</title>
   <style>
-    .navbar {
-      background-color: #d92525;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background-color: #f9f9f9;
     }
-    .navbar-brand, .nav-link, .btn-outline-light {
-      color: white !important;
-    }
-    .banner {
-      background-color: #f8f9fa;
+    header {
+      background-color: #c42021;
+      color: #fff;
       text-align: center;
-      padding: 3rem 1rem;
+      padding: 2rem 1rem;
     }
-    .banner img {
-      width: 100%;
-      max-height: 300px;
-      object-fit: cover;
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
     }
-    .btn-wsp {
-      background-color: white;
-      color: #d92525;
-      border: none;
-      padding: 12px 24px;
-      border-radius: 8px;
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+    }
+    nav {
+      background-color: #333;
+      padding: 0.5rem;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
       font-weight: bold;
+    }
+    .section {
+      padding: 2rem 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .section h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #c42021;
+    }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .grid img {
+      max-width: 100px;
+      height: auto;
+    }
+    .brands {
+      text-align: center;
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+    .footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      padding: 0.8rem 1.2rem;
+      border-radius: 50px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+    @media (max-width: 768px) {
+      .grid {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg">
-  <div class="container-fluid">
-    <a class="navbar-brand fw-bold" href="#">CXA</a>
-    <div class="ms-auto">
-      <a class="btn btn-outline-light" href="#">Contáctanos</a>
-    </div>
-  </div>
-</nav>
+  <header>
+    <h1>CXA | China Express Autoparts</h1>
+    <p>Confianza, Xperiencia, Agilidad</p>
+  </header>
 
-<!-- Banner -->
-<div class="banner">
-  <img src="banner-cxa.jpg" alt="Banner CXA">
-  <h2 class="mt-4 fw-bold text-dark">Confianza, Xperiencia, Agilidad</h2>
-  <p class="lead">Somos tu aliado en repuestos para vehículos chinos. Importamos y distribuimos autopartes con respaldo, cumplimiento y atención personalizada en toda Colombia.</p>
-  <a href="https://wa.me/573502657969" class="btn-wsp mt-3">Escríbenos por WhatsApp</a>
-</div>
-<!-- Sección Qué Hacemos -->
-<section class="py-5 text-center bg-white">
-  <div class="container">
-    <h2 class="fw-bold mb-4">¿Qué hacemos en CXA?</h2>
-    <p class="lead mb-5">
-      En CXA importamos, distribuimos y vendemos autopartes de vehículos chinos. Nuestra experiencia, cumplimiento y respaldo nos permiten ayudarte a resolver las necesidades de tu taller, negocio o flota.
-    </p>
+  <nav>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#marcas">Marcas</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
 
-    <div class="row text-start">
-      <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title fw-bold">Importación directa</h5>
-            <p class="card-text">Conectamos con fabricantes en Asia para traer repuestos con altos estándares de calidad y precios competitivos.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title fw-bold">Distribución en Colombia</h5>
-            <p class="card-text">Hacemos envíos a todo el país y entregas confiables en tiempos cortos, desde nuestra bodega en Bogotá.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title fw-bold">Asesoría técnica</h5>
-            <p class="card-text">Te ayudamos a identificar el repuesto exacto y garantizamos atención personalizada para que no pierdas tiempo ni dinero.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Sección Marcas Compatibles -->
-<section class="py-5 bg-light">
-  <div class="container text-center">
-    <h2 class="fw-bold mb-4">Vehículos y marcas compatibles</h2>
-    <p class="mb-5 lead">
-      Trabajamos con las principales marcas de vehículos chinos presentes en Colombia. Contamos con repuestos originales y genéricos para cada una.
-    </p>
+  <section id="nosotros" class="section">
+    <h2>¿Quiénes somos?</h2>
+    <p>Somos CXA, una empresa especializada en la comercialización de autopartes para vehículos chinos en Colombia. Brindamos soluciones rápidas y confiables tanto para repuestos originales como genéricos. Nuestro compromiso es ofrecer productos de calidad, servicio ágil y un acompañamiento permanente a nuestros clientes.</p>
+  </section>
 
-    <div class="row justify-content-center align-items-center">
-      <div class="col-6 col-md-2 mb-4">
-        <img src="img/changan-logo.png" alt="Changan" class="img-fluid" />
-      </div>
-      <div class="col-6 col-md-2 mb-4">
-        <img src="img/byd-logo.png" alt="BYD" class="img-fluid" />
-      </div>
-      <div class="col-6 col-md-2 mb-4">
-        <img src="img/jac-logo.png" alt="JAC" class="img-fluid" />
-      </div>
-      <div class="col-6 col-md-2 mb-4">
-        <img src="img/foton-logo.png" alt="Foton" class="img-fluid" />
-      </div>
-      <div class="col-6 col-md-2 mb-4">
-        <img src="img/dongfeng-logo.png" alt="Dongfeng" class="img-fluid" />
-      </div>
-      <div class="col-6 col-md-2 mb-4">
-        <img src="img/geely-logo.png" alt="Geely" class="img-fluid" />
-      </div>
+  <section id="marcas" class="section">
+    <h2>Marcas que manejamos</h2>
+    <p class="brands">Trabajamos con las principales marcas de vehículos chinos presentes en Colombia. Contamos con repuestos originales y genéricos para cada una.</p>
+    <div class="grid">
+      <img src="https://cxaimages.vercel.app/logos/changan.png" alt="Changan">
+      <img src="https://cxaimages.vercel.app/logos/byd.png" alt="BYD">
+      <img src="https://cxaimages.vercel.app/logos/jac.png" alt="JAC">
+      <img src="https://cxaimages.vercel.app/logos/foton.png" alt="Foton">
+      <img src="https://cxaimages.vercel.app/logos/dongfeng.png" alt="Dongfeng">
+      <img src="https://cxaimages.vercel.app/logos/geely.png" alt="Geely">
     </div>
-  </div>
-</section>
-<!-- Sección ¿Por qué elegirnos? -->
-<section class="py-5 bg-white">
-  <div class="container">
-    <h2 class="text-center fw-bold mb-4">¿Por qué elegir CXA?</h2>
-    <p class="text-center mb-5 lead">
-      Somos más que una tienda de autopartes. Somos tu aliado estratégico para mantener tu vehículo en perfecto estado.
-    </p>
+  </section>
 
-    <div class="row text-center">
-      <div class="col-md-4 mb-4">
-        <img src="img/icono-garantia.png" alt="Garantía" class="mb-3" width="60">
-        <h5 class="fw-bold">Garantía en todos nuestros productos</h5>
-        <p>Te ofrecemos respaldo y tranquilidad en cada compra. Trabajamos con proveedores certificados.</p>
-      </div>
-      <div class="col-md-4 mb-4">
-        <img src="img/icono-envio.png" alt="Envíos rápidos" class="mb-3" width="60">
-        <h5 class="fw-bold">Envíos a toda Colombia</h5>
-        <p>Hacemos despachos seguros y rápidos. Desde Bogotá a cualquier rincón del país.</p>
-      </div>
-      <div class="col-md-4 mb-4">
-        <img src="img/icono-atencion.png" alt="Atención personalizada" class="mb-3" width="60">
-        <h5 class="fw-bold">Atención personalizada</h5>
-        <p>Nos adaptamos a tus necesidades. Asesoría directa por WhatsApp y seguimiento constante.</p>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Sección Catálogo Simulado -->
-<section class="py-5 bg-light">
-  <div class="container">
-    <h2 class="text-center fw-bold mb-4">Catálogo de autopartes</h2>
-    <p class="text-center mb-5 lead">
-      Encuentra repuestos para las principales marcas chinas. Productos originales y genéricos de excelente calidad.
-    </p>
+  <section id="servicios" class="section">
+    <h2>¿Qué ofrecemos?</h2>
+    <ul>
+      <li>Venta de repuestos nuevos originales y genéricos</li>
+      <li>Envíos a todo el país</li>
+      <li>Asesoría personalizada según tu necesidad</li>
+      <li>Atención a distribuidores, talleres y cliente final</li>
+    </ul>
+  </section>
 
-    <div class="row text-center">
-      <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow">
-          <img src="img/frenos.jpg" class="card-img-top" alt="Sistema de frenos">
-          <div class="card-body">
-            <h5 class="card-title">Sistema de frenos</h5>
-            <p class="card-text">Pastillas, discos, bombas y todo lo que necesitas para una frenada segura.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow">
-          <img src="img/suspension.jpg" class="card-img-top" alt="Suspensión y dirección">
-          <div class="card-body">
-            <h5 class="card-title">Suspensión y dirección</h5>
-            <p class="card-text">Amortiguadores, terminales, tijeras y más para una conducción suave.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow">
-          <img src="img/motor.jpg" class="card-img-top" alt="Partes de motor">
-          <div class="card-body">
-            <h5 class="card-title">Partes de motor</h5>
-            <p class="card-text">Filtros, empaques, sensores y demás elementos esenciales del motor.</p>
-          </div>
-        </div>
-      </div>
-    </div>
+  <section id="contacto" class="section">
+    <h2>Contáctanos</h2>
+    <p>¿Tienes dudas o necesitas una cotización? ¡Estamos para ayudarte! Da clic en el botón de WhatsApp o escríbenos a nuestro correo.</p>
+    <p>Email: contacto@cxautoparts.com</p>
+  </section>
 
-    <div class="text-center mt-4">
-      <a href="#contacto" class="btn btn-danger btn-lg">Solicitar una cotización</a>
-    </div>
-  </div>
-</section>
-<section style="padding: 40px 20px; text-align: center;">
-  <h2 style="color: #d9232d;">¿Por qué elegir CXA?</h2>
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 30px;">
-    <div style="max-width: 300px;">
-      <img src="imagenes/envio-rapido.png" alt="Envío Rápido" style="width: 80px;">
-      <h3>Envíos rápidos</h3>
-      <p>Entregamos autopartes en todo el país con rapidez y seguridad.</p>
-    </div>
-    <div style="max-width: 300px;">
-      <img src="imagenes/garantia.png" alt="Garantía" style="width: 80px;">
-      <h3>Respaldo garantizado</h3>
-      <p>Productos con garantía y soporte técnico especializado.</p>
-    </div>
-    <div style="max-width: 300px;">
-      <img src="imagenes/asesoria.png" alt="Asesoría" style="width: 80px;">
-      <h3>Atención personalizada</h3>
-      <p>Te acompañamos desde la cotización hasta la entrega del producto.</p>
-    </div>
-  </div>
-</section>
-<section style="background-color: #f7f7f7; padding: 40px 20px; text-align: center;">
-  <h2 style="color: #d9232d;">Marcas que manejamos</h2>
-  <p>Trabajamos con autopartes de las principales marcas de vehículos chinos.</p>
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 30px;">
-    <img src="imagenes/changan.png" alt="Changan" style="height: 60px;">
-    <img src="imagenes/jac.png" alt="JAC" style="height: 60px;">
-    <img src="imagenes/foton.png" alt="Foton" style="height: 60px;">
-    <img src="imagenes/chery.png" alt="Chery" style="height: 60px;">
-    <img src="imagenes/greatwall.png" alt="Great Wall" style="height: 60px;">
-    <img src="imagenes/dongfeng.png" alt="Dongfeng" style="height: 60px;">
-  </div>
-</section>
-<section style="padding: 40px 20px; text-align: center;">
-  <h2 style="color: #d9232d;">Nuestro Catálogo</h2>
-  <p>Consulta nuestras autopartes por marca o referencia. Recibe atención inmediata.</p>
+  <a class="whatsapp-btn" href="https://wa.me/573502657969" target="_blank">📲 Escríbenos</a>
 
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 30px;">
-    <div style="max-width: 250px; border: 1px solid #ddd; padding: 20px; border-radius: 10px;">
-      <img src="imagenes/catalogo-motor.png" alt="Motor" style="height: 100px;">
-      <h3>Repuestos de motor</h3>
-    </div>
-    <div style="max-width: 250px; border: 1px solid #ddd; padding: 20px; border-radius: 10px;">
-      <img src="imagenes/catalogo-suspension.png" alt="Suspensión" style="height: 100px;">
-      <h3>Suspensión y dirección</h3>
-    </div>
-    
+  <footer class="footer">
+    <p>&copy; 2025 CXA - China Express Autoparts. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
+
